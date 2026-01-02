@@ -1,65 +1,106 @@
-# DomainChecker
 
-A simple web application to check the availability of domain names using the WhoIsFreaks API.
+# 🌐 Domain Availability Checker
 
-## Description
+A sleek and simple web application that allows users to check the **availability of domain names** in real-time using the WhoisFreaks API. Built using **HTML5, CSS3, and vanilla JavaScript**, it provides status updates and alternative suggestions instantly.
 
-DomainChecker is a user-friendly tool that allows users to enter a domain name and check if it is available for registration. The app provides instant feedback on domain availability, helping users find suitable domain names for their businesses or projects.
+## 📸 Preview
 
-## Features
+![image](https://github.com/user-attachments/assets/7e476fa3-b3b1-459d-a207-0f78b9880e86)
 
-- **Domain Availability Check**: Enter a domain name and get instant results on whether it's available.
-- **Responsive Design**: Clean and modern UI with gradient backgrounds and hover effects.
-- **Error Handling**: Displays appropriate messages for failed checks or unavailable domains.
-- **Fast and Simple**: Lightweight web app that works directly in the browser.
+****![Screenshot 2025-07-08 005400](https://github.com/user-attachments/assets/b09a90eb-aeea-4a98-84ec-38ed4ea73014)
 
-## Technologies Used
+## 🚀 Features
 
-- **HTML**: Structure of the web page.
-- **CSS**: Styling and layout, including gradients and responsive design.
-- **JavaScript**: Logic for API calls and DOM manipulation.
-- **WhoIsFreaks API**: External API for domain availability checks.
+* 🔍 **Real-time Domain Availability Check**
+  Instantly checks whether a domain is available for registration.
 
-## Setup and Installation
+* 📬 **Smart Suggestions**
+  Displays up to 5 suggested domain names when the input is already taken.
 
-1. **Clone or Download the Repository**:
-   - Download the project files to your local machine.
+* ⚡ **Fast & Lightweight**
+  Uses async JavaScript and fetch API with no external dependencies.
 
-2. **Open the Application**:
-   - Open `index.html` in any modern web browser.
-   - No additional server or installation required; it's a static web app.
+* 🎨 **Gradient UI Design**
+  Clean and responsive UI using modern gradient styling.
 
-## Usage
+---
 
-1. Open `index.html` in your web browser.
-2. Enter a domain name (e.g., "example.com") in the input field.
-3. Click the search button (magnifying glass icon).
-4. View the status message below, which will indicate if the domain is available or not.
+## 📊 Technologies Used
 
-## API Key
+| Tech            | Description                       |
+| --------------- | --------------------------------- |
+| HTML5           | Markup language                   |
+| CSS3            | Styling with Flexbox & Gradients  |
+| JavaScript ES6  | Logic and API integration         |
+| WhoisFreaks API | Domain availability + suggestions |
 
-The application uses a free API key from WhoIsFreaks. The key is currently hardcoded in `script.js` for demonstration purposes. For production use, consider securing the API key (e.g., via environment variables or a backend proxy).
+---
 
-- API Endpoint: `https://api.whoisfreaks.com/v1.0/domain/availability`
-- Note: The API provides domain availability and suggestions.
+## ⚙️ How It Works
 
-## File Structure
+1. The user enters a domain name (e.g., `example.com`) in the input field.
+2. On clicking the **search button**, a `fetch()` call is made to the WhoisFreaks API.
+3. The response returns the **domain availability** status.
+4. If the domain is taken:
 
-- `index.html`: Main HTML file containing the UI structure.
-- `style.css`: CSS file for styling the application.
-- `script.js`: JavaScript file handling the API calls and user interactions.
-- `search.png`: Icon for the search button.
-- `download.jpeg`: Background image (commented out in CSS).
-- `the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg`: Additional image asset.
+   * A ❌ message is shown.
+   * Up to 5 alternative suggestions are displayed.
+5. If the domain is available:
 
-## Contributing
+   * A ✅ message is shown.
 
-Feel free to fork the repository and submit pull requests for improvements or bug fixes.
+---
 
-## License
+## 📈 Project Statistics
 
-This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT).
+* 🧠 Pure JavaScript logic — no external frameworks
+* 🗂️ Files: 3 (HTML, CSS, JS)
+* 🔗 API Used: WhoisFreaks (Free Tier)
+* 🧪 Domain status checked in real-time
+* ⚡ Fully responsive and mobile-friendly
+* ⏱️ Updates within \~1 second after input
 
-## Disclaimer
+---
 
-This tool is for informational purposes only. Always verify domain availability through official registrars before purchasing.
+## 📌 Future Enhancements
+
+* 🌐 Allow filtering by domain types (`.com`, `.org`, `.net`)
+* 📜 Save search history using `localStorage`
+* 🔔 Add toast notifications instead of alerts
+* 📱 Improve mobile responsiveness
+* 🧩 Add loading animation while fetching API data
+
+---
+
+## 🛠️ Installation & Usage
+
+### 📁 Clone the repository
+
+```bash
+git clone https://github.com/yourusername/domain-checker.git
+cd domain-checker
+```
+
+### 💡 Open `index.html` in a browser
+
+No build tools or installations needed. Just open it directly:
+
+```bash
+start index.html
+```
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) — you are free to use, share, and modify it.
+
+---
+
+## 🙋‍♂️ Author
+
+**Kunal More**
+📫 Connect with me:
+
+* [GitHub](https://github.com/yourusername)
+* [LinkedIn](https://www.linkedin.com/in/yourprofile)
